@@ -1,0 +1,43 @@
+{
+  "undefined": [
+    {
+      "id": "Minus rem beatae soluta facilis ut illo aut asperiores.",
+      "name": "Elliot",
+      "username": "Leif",
+      "bio": "Dolor veritatis blanditiis numquam expedita doloribus.",
+      "email": "Minerva_Hand@yahoo.com",
+      "emailVerified": "2045-06-09T07:11:48.730Z",
+      "image": "Dicta dolores tempora suscipit.",
+      "coverImage": "At repellat error voluptates sit repellendus saepe cumque corrupti nobis.",
+      "profileImage": "Aliquid laborum quam dolor itaque placeat veritatis laboriosam quas molestiae.",
+      "hashedPassword": "Amet molestiae dicta aspernatur molestias voluptates officiis.",
+      "createdAt": "2023-04-17T17:02:14.801Z",
+      "updatedAt": "2023-04-24T08:00:05.384Z",
+      "followingIds": "Quisquam eum est labore aut commodi occaecati minus cumque praesentium.",
+      "hasNotification": true
+    },
+    {
+      "id": "Magni vel at alias animi.",
+      "body": "Voluptate corporis rerum doloribus sit excepturi quibusdam.",
+      "createdAt": "2022-07-03T13:39:06.414Z",
+      "updatedAt": "2023-04-24T06:04:05.400Z",
+      "userId": "Voluptatum illo reprehenderit laudantium explicabo.",
+      "likedIds": "Sapiente ex dicta quidem vitae at vitae.",
+      "image": "Cupiditate fuga omnis."
+    },
+    {
+      "id": "Provident rem molestias voluptatum.",
+      "body": "Atque illo iure architecto atque soluta dolorem sit.",
+      "createdAt": "2022-07-20T01:12:10.586Z",
+      "updatedAt": "2023-04-23T13:21:35.838Z",
+      "userId": "Laboriosam ad explicabo ea similique quia architecto commodi animi beatae.",
+      "postId": "Maiores maxime impedit corporis explicabo possimus pariatur molestias reiciendis nihil."
+    },
+    {
+      "id": "Quisquam excepturi enim exercitationem voluptatum consectetur.",
+      "body": "Ut ad enim.",
+      "userId": "Cupiditate ullam dolore aspernatur quasi dignissimos optio ullam.",
+      "createdAt": "2022-09-25T13:10:48.130Z"
+    }
+  ]
+}

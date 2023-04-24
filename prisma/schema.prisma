@@ -10,6 +10,18 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+
+// generator json_server {
+//   provider       = "prisma-json-server-generator"
+//   outputFileName = "db.json"
+// }
+
+// // datasource db {
+// //   provider = "mongodb"
+// //   url      = "file:../db.json"
+// // }
+
+
 model User {
   id              String @id @default(auto()) @map("_id") @db.ObjectId
   name            String?

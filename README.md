@@ -1,7 +1,13 @@
+Db.json is engaged -
+
+npm install prisma-json-server-generator
+json-server
+
+https://dev.to/omardulaimi/how-to-create-a-json-server-from-your-prisma-schema-6el
+
 # Build and Deploy: TWITTER clone with React, Tailwind, Next, Prisma, Mongo, NextAuth & Vercel (2023)
 
 ![Fullstack Twitter Clone (2)](https://user-images.githubusercontent.com/23248726/224405420-03112a76-250a-4283-992c-60e235170678.png)
-
 
 This is a repository for a FullStack Twitter clone tutorial using React, NextJS, TailwindCSS & Prisma.
 
@@ -41,7 +47,6 @@ npm i
 
 ### Setup .env file
 
-
 ```js
 DATABASE_URL=
 NEXTAUTH_JWT_SECRET=
@@ -58,6 +63,6 @@ npm run dev
 
 Running commands with npm `npm run [command]`
 
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
+| command | description                              |
+| :------ | :--------------------------------------- |
+| `dev`   | Starts a development instance of the app |

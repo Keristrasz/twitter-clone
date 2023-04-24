@@ -12,23 +12,27 @@ interface AvatarProps {
 
 const Avatar: React.FC<AvatarProps> = ({ userId, isLarge, hasBorder }) => {
   const router = useRouter();
-
+  //useuser gets and id to get one user, users gets all users
   const { data: fetchedUser } = useUser(userId);
 
-  const onClick = useCallback((event: any) => {
-    event.stopPropagation();
+  const onClick = useCallback(
+    (event: any) => {
+      //clickable avatar inside another component and this prevents another components click default func
+      event.stopPropagation();
 
-    const url = `/users/${userId}`;
+      const url = `/users/${userId}`;
 
-    router.push(url);
-  }, [router, userId]);
+      router.push(url);
+    },
+    [router, userId]
+  );
 
   return (
     <div
       className={`
-        ${hasBorder ? 'border-4 border-black' : ''}
-        ${isLarge ? 'h-32' : 'h-12'}
-        ${isLarge ? 'w-32' : 'w-12'}
+        ${hasBorder ? "border-4 border-black" : ""}
+        ${isLarge ? "h-32" : "h-12"}
+        ${isLarge ? "w-32" : "w-12"}
         rounded-full 
         hover:opacity-90 
         transition 
@@ -39,15 +43,15 @@ const Avatar: React.FC<AvatarProps> = ({ userId, isLarge, hasBorder }) => {
       <Image
         fill
         style={{
-          objectFit: 'cover',
-          borderRadius: '100%'
+          objectFit: "cover",
+          borderRadius: "100%",
         }}
         alt="Avatar"
         onClick={onClick}
-        src={fetchedUser?.profileImage || '/images/placeholder.png'}
+        src={fetchedUser?.profileImage || "/images/placeholder.png"}
       />
     </div>
   );
-}
- 
+};
+
 export default Avatar;

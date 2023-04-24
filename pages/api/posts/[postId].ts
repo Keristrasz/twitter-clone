@@ -3,30 +3,32 @@ import { NextApiRequest, NextApiResponse } from "next";
 import prisma from "@/libs/prismadb";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method !== 'GET') {
+  if (req.method !== "GET") {
     return res.status(405).end();
   }
 
   try {
     const { postId } = req.query;
 
-    if (!postId || typeof postId !== 'string') {
-      throw new Error('Invalid ID');
+    if (!postId || typeof postId !== "string") {
+      throw new Error("Invalid ID");
     }
-
+    //maybe consider using select instead of include, which is returning all the fields?
     const post = await prisma.post.findUnique({
       where: {
         id: postId,
       },
       include: {
+        //we want to populate user
         user: true,
+        //and comments, and user who created comment
         comments: {
           include: {
-            user: true
+            user: true,
           },
           orderBy: {
-            createdAt: 'desc'
-          }
+            createdAt: "desc",
+          },
         },
       },
     });

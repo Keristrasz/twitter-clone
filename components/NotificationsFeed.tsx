@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const NotificationsFeed = () => {
   const { data: currentUser, mutate: mutateCurrentUser } = useCurrentUser();
   const { data: fetchedNotifications = [] } = useNotifications(currentUser?.id);
-
+  //refetch our use, everytime we reset nottification to false, so alert is removed
   useEffect(() => {
     mutateCurrentUser();
   }, [mutateCurrentUser]);

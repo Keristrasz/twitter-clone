@@ -1,6 +1,6 @@
-import usePosts from '@/hooks/usePosts';
+import usePosts from "@/hooks/usePosts";
 
-import PostItem from './PostItem';
+import PostItem from "./PostItem";
 
 interface PostFeedProps {
   userId?: string;
@@ -8,10 +8,10 @@ interface PostFeedProps {
 
 const PostFeed: React.FC<PostFeedProps> = ({ userId }) => {
   const { data: posts = [] } = usePosts(userId);
-
+  //to load all of the posts on home page
   return (
     <>
-      {posts.map((post: Record<string, any>,) => (
+      {posts.map((post: Record<string, any>) => (
         <PostItem userId={userId} key={post.id} data={post} />
       ))}
     </>

@@ -1,17 +1,18 @@
-import useSWR from 'swr';
+import useSWR from "swr";
 
-import fetcher from '@/libs/fetcher';
+import fetcher from "@/libs/fetcher";
 
 const usePosts = (userId?: string) => {
-  const url = userId ? `/api/posts?userId=${userId}` : '/api/posts';
+  //we are gonna accept userId sometimes, all posts, or all posts from user
+  const url = userId ? `/api/posts?userId=${userId}` : "/api/posts";
   const { data, error, isLoading, mutate } = useSWR(url, fetcher);
 
   return {
     data,
     error,
     isLoading,
-    mutate
-  }
+    mutate,
+  };
 };
 
 export default usePosts;
